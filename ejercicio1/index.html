@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio 1: Registro de Alumnos</h1>
+        <ul>
+            <li><a href="../ejercicio2/index.html">Ejercicio 2</a></li>
+            <li><a href="../ejercicio3/index.html">Ejercicio 3</a></li>
+        </ul>
+    </header>
+    <main>
+        <article id="entrada-datos">
+            <label for="nombre">Nombre del alumno</label>
+            <input type="text" id="nombre" placeholder="Inserte nombre aquí" oninput="validarNombre()">
+            <label for="peso">Peso del alumno</label>
+            <input type="number" id="peso" placeholder="Inserte el peso aquí" oninput="validarNum()">
+            <button onclick="guardar()">Guardar</button>
+            
+            <h4 id="estado"></h4>
+        </article>
+        <article id="info">
+            <h3>Presione para ver:</h3>
+            <button onclick="verAlumnos()">Todos los alumnos</button>
+            <button onclick="verAlumnos(0, 40)">Con menos de 40Kg</button>
+            <button onclick="verAlumnos(40, 50)">Entre 40 y 50Kg</button>
+            <button onclick="verAlumnos(50, 60)">De más de 50 y menos de 60Kg</button>
+            <button onclick="verAlumnos(60)">De más de 60Kg</button>
+            <table border="1" id="alumnado">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Peso</th>
+                    </tr>
+                </thead>
+                <tbody id="info-alumnado">
+                </tbody>
+            </table>
+        </article>
+    </main>
+
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicio 2: Calculadora de intereses</h1>
+        <ul>
+            <li><a href="../ejercicio1/index.html">Ejercicio 1</a></li>
+            <li><a href="../ejercicio3/index.html">Ejercicio 3</a></li>
+        </ul>
+    </header>
+    <main>
+        <article id="planteamiento">
+                <p>Esta herramienta sirve para calcular el interés de una cuenta de ahorros a fin de año, en base a los siguientes términos:</p>
+                <ul>
+                    <li>La cuenta genera un interés del 15% anual, lo que equivale a 1.25% mensual.</li>
+                    <li>El monto inicial se ingresa en el mes de enero y mensualmente se ingresan 250,00 Bs.</li>
+                    <li>El cálculo se requiere hasta el mes de diciembre.</li>
+                </ul>
+        </article>
+        <article id="datos">
+            <label for="monto">Ingrese el monto inicial en bolívares a continuación:</label>
+            <input type="number" id="monto" placeholder='Ej: "500.00" o "1250.49"' onchange="calcular()">
+            <p id="resultado">El resultado aparecerá aquí.</p>
+        </article>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
