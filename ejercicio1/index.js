@@ -41,7 +41,7 @@ function validarNombre() {
 
     } else if (!regex.test(inNombre.value)) {
         var valorAnterior = inNombre.value;
-        inNombre.value = valorAnterior.replace(/[^a-zA-Z0-9\s]/g, '');
+        inNombre.value = valorAnterior.replace(/[^a-zA-ZáéíóúñÑ\s]/g, '');
     }
 }
 

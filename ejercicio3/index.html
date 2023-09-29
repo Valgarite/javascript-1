@@ -13,7 +13,30 @@
             <li><a href="../ejercicio2/index.html">Ejercicio 2</a></li>
         </ul>
     </header>
-    
+    <article>
+        <label for="nombre">Ingrese el nombre del alumno</label>
+        <input type="text" id="nombre" placeholder="Nombre" oninput="validarNombre()">
+        <label for="cedula">Cédula del alumno</label>
+        <input type="text" id="cedula" placeholder="Ej: 30064934" oninput="validarNum('cedula', 99999999)">
+        <label for="mat">Nota en matemáticas</label>
+        <input type="number" id="mat" placeholder="0 a 20"oninput="validarNum('mat', 20)">
+        <label for="fis">Nota en física</label>
+        <input type="number" id="fis" placeholder="0 a 20"oninput="validarNum('fis', 20)">
+        <label for="prog">Nota en programación</label>
+        <input type="number" id="prog" placeholder="0 a 20" oninput="validarNum('prog', 20)">
+        <button onclick="guardar()">Guardar alumno</button>
+    </article>
+    <article>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th></th><th></th><th>Matemáticas</th><th>Física</th><th>Programación</th>
+                </tr>
+            </thead>
+            <tbody id="info-estudiantes">
+            </tbody>
+        </table>
+    </article>
 </body>
 <script src="index.js"></script>
 </html>
