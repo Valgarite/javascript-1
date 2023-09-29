@@ -16,6 +16,7 @@ function guardar() {
             peso: montoInit.value
         })
     }
+    verAlumnos(0, 999)
     return
 }
 
